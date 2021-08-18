@@ -1,0 +1,6 @@
+<form method='POST'>
+    {% csrf_token %}
+    {{form.as_p}}
+    <input type='submit' class='login-button' value='Войти'>
+</form>
+<p>Нет аккаунта? <a href='{% url 'register' %}'>Создать</a></p>
